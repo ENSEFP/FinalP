@@ -29,11 +29,13 @@ public class BackgoundWorker extends AsyncTask<String, Void, String > {
 
     @Override
     protected void onPreExecute() {
+
         super.onPreExecute();
     }
 
     @Override
     protected void onProgressUpdate(Void... values) {
+
         super.onProgressUpdate(values);
     }
 
@@ -47,23 +49,22 @@ public class BackgoundWorker extends AsyncTask<String, Void, String > {
         String reg_url = "http://127.0.0.1/WebappTest/register.php";
         String login_url = "";
         String method = params[0];
-        if(method.equals("Register"))
+        if(method.equals("register"))
         {
             String email = params[1];
             String password = params[2];
-            String password2 = params[3];
 
             try {
-                URL url = new URL (reg_url);
+                URL url = new URL(reg_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
                 httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
                 OutputStream OS = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(OS, "UTF-8"));
 
                 String data = URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email,"UTF-8") + "&" +
-                        URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password,"UTF-8") + "&" +
-                        URLEncoder.encode("password2", "UTF-8") + "=" + URLEncoder.encode(password2,"UTF-8");
+                        URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password,"UTF-8");
 
                 bufferedWriter.write(data);
                 bufferedWriter.flush();

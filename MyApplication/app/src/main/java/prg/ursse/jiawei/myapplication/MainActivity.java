@@ -18,16 +18,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void userReg (View view){
+
         startActivity(new Intent(this,Register.class));
     }
-    public void OnOpen (View view){
-        openStatus = "1";
 
-    }
 
-    public void OnClose (View view){
-
-    }
 }
 
 

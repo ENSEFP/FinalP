@@ -11,8 +11,8 @@ import android.widget.EditText;
 
 public class Register extends Activity{
 
-    EditText EditEmail, EditPassword, EditPassword2;
-    String email, password, password2;
+    EditText EditEmail, EditPassword;
+    String email, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -21,7 +21,6 @@ public class Register extends Activity{
 
         EditEmail = (EditText) findViewById(R.id.email);
         EditPassword = (EditText) findViewById(R.id.password);
-        EditPassword2 = (EditText) findViewById(R.id.password);
 
 
     }
@@ -29,10 +28,9 @@ public class Register extends Activity{
     public void userReg(View view){
         email = EditEmail.getText().toString();
         password = EditPassword.getText().toString();
-        password2 = EditPassword2.getText().toString();
         String method = "register";
         BackgoundWorker bw = new BackgoundWorker(this);
-        bw.execute(method,email,password,password2);
+        bw.execute(method,email,password);
         finish();
     }
 }
