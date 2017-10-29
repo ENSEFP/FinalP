@@ -44,7 +44,7 @@ public class BackgoundWorker extends AsyncTask<String, Void, String > {
 
     @Override
     protected String doInBackground(String... params) {
-        String reg_url = "";
+        String reg_url = "http://127.0.0.1/WebappTest/register.php";
         String login_url = "";
         String method = params[0];
         if(method.equals("Register"))
