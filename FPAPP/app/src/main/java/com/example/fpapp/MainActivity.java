@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     DatabaseHelper myDb;
     EditText editStatus, editTextId;
-    Button btnAddData, viewAll, update;
+    Button btnAddData, viewAll, update, delete;
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +32,11 @@ public class MainActivity extends AppCompatActivity {
         btnAddData = (Button)findViewById(R.id.button);
         viewAll = (Button)findViewById(R.id.button2);
         update = (Button)findViewById(R.id.button3);
+        delete = (Button)findViewById(R.id.button4);
         AddData();
         ViewAll();
         UpdateDate();
+        DeleteData();
 
 
 
@@ -65,6 +67,20 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Data Inserted", Toast.LENGTH_LONG).show();
                         else
                             Toast.makeText(MainActivity.this, "Data Not Inserted", Toast.LENGTH_LONG).show();
+                    }
+                }
+        );
+    }
+
+    public void DeleteData(){
+        delete.setOnClickListener(
+                new View.OnClickListener(){
+                    public void onClick(View v){
+                        Integer deletedRows = myDb.deleteData(editTextId.getText().toString());
+                        if(deletedRows > 0)
+                            Toast.makeText(MainActivity.this, "Data Deleted", Toast.LENGTH_LONG).show();
+                        else
+                            Toast.makeText(MainActivity.this, "Data Not Deleted", Toast.LENGTH_LONG).show();
                     }
                 }
         );
