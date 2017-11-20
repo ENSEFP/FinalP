@@ -1,4 +1,4 @@
-package com.example.fpapp;
+package com.example.fpapp.SQLdb;
 
 import android.content.ContentValues;
 import android.content.Context;
