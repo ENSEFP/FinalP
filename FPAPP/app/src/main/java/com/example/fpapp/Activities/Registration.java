@@ -1,28 +1,30 @@
-package com.example.fpapp;
+package com.example.fpapp.Activities;
+
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
 import com.example.fpapp.R;
-import com.example.fpapp.Validation.InputValidation;
 import com.example.fpapp.Model.User;
+import com.example.fpapp.Validation.InputValidation;
 import com.example.fpapp.SQLdb.DatabaseHelper;
 
 /**
- * Created by chenxiaojie on 2017-11-19.
+ * Created by chenxiaojie on 2017-10-29.
  */
 
 public class Registration extends AppCompatActivity implements View.OnClickListener {
 
     private final AppCompatActivity activity = Registration.this;
+
+    private NestedScrollView nestedScrollView;
 
     private TextInputLayout textInputLayoutName;
     private TextInputLayout textInputLayoutEmail;
@@ -53,7 +55,12 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initViews(){
+        nestedScrollView = (NestedScrollView) findViewById(R.id.nestedScrollView);
 
+        textInputLayoutName = (TextInputLayout) findViewById(R.id.textInputLayoutName);
+        textInputLayoutEmail = (TextInputLayout) findViewById(R.id.textInputLayoutEmail);
+        textInputLayoutPassword = (TextInputLayout) findViewById(R.id.textInputLayoutPassword);
+        textInputLayoutConfirmPassword = (TextInputLayout) findViewById(R.id.textInputLayoutConfirmPassword);
 
         textInputEditTextName = (TextInputEditText) findViewById(R.id.textInputEditTextName);
         textInputEditTextEmail = (TextInputEditText) findViewById(R.id.textInputEditTextEmail);

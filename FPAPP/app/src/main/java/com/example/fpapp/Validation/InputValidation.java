@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
 /**
- * Created by chenxiaojie on 2017-11-19.
+ * Created by Chenxiaojie on 8/13/17.
  */
 
 public class InputValidation {
@@ -63,5 +63,4 @@ public class InputValidation {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Activity.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
-
 }
