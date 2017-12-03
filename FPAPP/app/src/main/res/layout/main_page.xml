@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -21,58 +21,58 @@
         android:textStyle="bold" />
 
     <Switch
-        android:id="@+id/switch9"
+        android:id="@+id/startEngine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/text1"
+        android:layout_below="@+id/name"
         android:layout_marginLeft="69dp"
         android:layout_marginStart="69dp"
         android:layout_marginTop="69dp"
         android:text="Start Engine" />
 
     <Switch
-        android:id="@+id/switch10"
+        android:id="@+id/key"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/switch9"
-        android:layout_alignBottom="@+id/switch9"
+        android:layout_alignBaseline="@+id/startEngine"
+        android:layout_alignBottom="@+id/startEngine"
         android:layout_marginLeft="53dp"
         android:layout_marginStart="53dp"
-        android:layout_toEndOf="@+id/switch9"
-        android:layout_toRightOf="@+id/switch9"
+        android:layout_toEndOf="@+id/startEngine"
+        android:layout_toRightOf="@+id/startEngine"
         android:text="Key" />
 
     <Switch
-        android:id="@+id/switch11"
+        android:id="@+id/alarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/switch9"
-        android:layout_alignStart="@+id/switch9"
-        android:layout_below="@+id/switch9"
+        android:layout_alignLeft="@+id/startEngine"
+        android:layout_alignStart="@+id/startEngine"
+        android:layout_below="@+id/startEngine"
         android:layout_marginTop="79dp"
-        android:text="Switch" />
+        android:text="Alarm" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/switch11"
-        android:layout_alignBottom="@+id/switch11"
+        android:layout_alignBaseline="@+id/alarm"
+        android:layout_alignBottom="@+id/alarm"
         android:layout_marginLeft="38dp"
         android:layout_marginStart="38dp"
-        android:layout_toEndOf="@+id/switch9"
-        android:layout_toRightOf="@+id/switch9"
+        android:layout_toEndOf="@+id/startEngine"
+        android:layout_toRightOf="@+id/startEngine"
         android:text="Location" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/switch11"
-        android:layout_alignRight="@+id/switch11"
-        android:layout_below="@+id/button7"
+        android:layout_alignEnd="@+id/alarm"
+        android:layout_alignRight="@+id/alarm"
+        android:layout_below="@+id/location"
         android:layout_marginTop="59dp"
         android:text="Video" />
 
