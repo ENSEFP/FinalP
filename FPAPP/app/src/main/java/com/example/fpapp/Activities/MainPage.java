@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Switch;
 
 import android.content.Intent;
 
@@ -35,6 +36,28 @@ public class MainPage extends AppCompatActivity {
         location();
         camera();
     }
+
+    public void OnOpen(View view) {
+        // initiate a Switch
+        Switch simpleSwitch = (Switch) findViewById(R.id.open);
+
+        // check current state of a Switch (true or false).
+        Boolean switchState = simpleSwitch.isChecked();
+        String Temp;
+        if(switchState == true){
+            Temp = "1";
+        }else{
+            Temp = "0";
+        }
+
+        String type = "open";
+
+        OpenDoor openDoor = new OpenDoor(this);
+        openDoor.execute(type, Temp);
+    }
+
+
+
 
     public void location(){
         location = (Button) findViewById(R.id.location);
