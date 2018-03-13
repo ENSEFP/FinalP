@@ -25,8 +25,8 @@
         <activity android:name=".MainFan" />
         <activity android:name=".MainConfiguration" />
         <activity android:name=".MainLock" />
-        <activity android:name=".MainLockOpen"></activity>
-
+        <activity android:name=".MainLockOpen" />
+        <activity android:name=".MainLockClose"></activity>
     </application>
 
 </manifest>

@@ -8,35 +8,33 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
 
-public class MainLockOpen extends AppCompatActivity {
+public class MainLockClose extends AppCompatActivity {
 
     private ImageView back_lock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_lock_open);
+        setContentView(R.layout.activity_main_lock_close);
 
-        String url = "http://www.cmledu.com";
+        String url = "http://www.apple.com";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);
 
-        back_lock_open();
+        back_lock_close();
 
     }
 
-    public void back_lock_open(){
-        back_lock = (ImageView) findViewById(R.id.back_lock_open);
+    public void back_lock_close(){
+        back_lock = (ImageView) findViewById(R.id.back_lock_close);
         back_lock.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent0 = new Intent(MainLockOpen.this, MainLock.class);
+                Intent intent0 = new Intent(MainLockClose.this, MainLock.class);
                 startActivity(intent0);
             }
         });
     }
-
-
 
 }

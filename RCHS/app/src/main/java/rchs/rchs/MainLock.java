@@ -14,7 +14,7 @@ import android.widget.ImageView;
 public class MainLock extends AppCompatActivity {
 
 
-    private ImageView back_lock, open_lock;
+    private ImageView back_lock, open_lock, close_lock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainLock extends AppCompatActivity {
 
         back_lock();
         open_lock();
-
+        close_lock();
     }
 
     public void back_lock(){
@@ -45,6 +45,17 @@ public class MainLock extends AppCompatActivity {
             public void onClick(View v){
                 Intent intent1 = new Intent(MainLock.this, MainLockOpen.class);
                 startActivity(intent1);
+            }
+        });
+    }
+
+    public void close_lock(){
+        close_lock = (ImageView) findViewById(R.id.close);
+        close_lock.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent2 = new Intent(MainLock.this, MainLockClose.class);
+                startActivity(intent2);
             }
         });
     }
