@@ -19,6 +19,7 @@ public class MainFanLevel1 extends AppCompatActivity {
 
         String url = "http://www.youtube.com";
         WebView webb = (WebView) this.findViewById(R.id.webView);
+        webb.getSettings().setJavaScriptEnabled(true);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);
 
