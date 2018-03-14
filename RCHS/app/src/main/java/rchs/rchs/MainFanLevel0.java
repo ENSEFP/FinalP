@@ -18,7 +18,7 @@ public class MainFanLevel0 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fan_level0);
 
-        String url = "http://www.google.com";
+        String url = "http://192.168.4.2/esp/fan.php?fan=0";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);

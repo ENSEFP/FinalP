@@ -17,7 +17,7 @@ public class MainLedKitchenOpen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_led_kitchen_open);
 
-        String url = "http://www.apple.com";
+        String url = "http://192.168.4.2/esp/kitchen_led.php?kitchen_led=1";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);

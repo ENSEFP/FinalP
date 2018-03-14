@@ -17,7 +17,7 @@ public class MainLedBedroomOpen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_led_bedroom_open);
 
-        String url = "http://www.cmledu.com";
+        String url = "http://192.168.4.2/esp/bedroom_led.php?bedroom_led=1";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);

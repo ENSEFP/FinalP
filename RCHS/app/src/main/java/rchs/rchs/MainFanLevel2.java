@@ -17,7 +17,7 @@ public class MainFanLevel2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fan_level2);
 
-        String url = "http://www.cmledu.com";
+        String url = "http://192.168.4.2/esp/fan.php?fan=2";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);

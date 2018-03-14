@@ -17,7 +17,7 @@ public class MainFanLevel1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fan_level1);
 
-        String url = "http://www.youtube.com";
+        String url = "http://192.168.4.2/esp/fan.php?fan=1";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.getSettings().setJavaScriptEnabled(true);
         webb.setWebViewClient(new WebViewClient());

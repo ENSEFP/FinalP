@@ -17,7 +17,7 @@ public class MainFanLevel3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_fan_level3);
 
-        String url = "http://www.uregina.ca";
+        String url = "http://192.168.4.2/esp/fan.php?fan=3";
         WebView webb = (WebView) this.findViewById(R.id.webView);
         webb.setWebViewClient(new WebViewClient());
         webb.loadUrl(url);
