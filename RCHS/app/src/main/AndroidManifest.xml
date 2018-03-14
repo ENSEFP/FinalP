@@ -26,7 +26,17 @@
         <activity android:name=".MainConfiguration" />
         <activity android:name=".MainLock" />
         <activity android:name=".MainLockOpen" />
-        <activity android:name=".MainLockClose"></activity>
+        <activity android:name=".MainLockClose" />
+        <activity android:name=".MainLedBedroomClose" />
+        <activity android:name=".MainLedBedroomOpen" />
+        <activity android:name=".MainLedLivingRoomClose" />
+        <activity android:name=".MainLedLivingRoomOpen" />
+        <activity android:name=".MainLedKitchenClose" />
+        <activity android:name=".MainLedKitchenOpen" />
+        <activity android:name=".MainFanLevel0" />
+        <activity android:name=".MainFanLevel1" />
+        <activity android:name=".MainFanLevel2" />
+        <activity android:name=".MainFanLevel3"></activity>
     </application>
 
 </manifest>
