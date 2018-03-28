@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RCHS</string>
+    <string name="remote_control_home_system">Remote Control Home System</string>
+    <string name="title_activity_main_led">MainLed</string>
+</resources>

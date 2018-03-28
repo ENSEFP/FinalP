@@ -36,7 +36,12 @@
         <activity android:name=".MainFanLevel0" />
         <activity android:name=".MainFanLevel1" />
         <activity android:name=".MainFanLevel2" />
-        <activity android:name=".MainFanLevel3"></activity>
+        <activity android:name=".MainFanLevel3" />
+        <activity android:name=".MainConfigurationUp" />
+        <activity android:name=".MainConfigurationDown" />
+        <activity android:name=".MainConfigurationAbove" />
+        <activity android:name=".MainConfigurationBelow" />
+        <activity android:name=".MainConfigurationTime"></activity>
     </application>
 
 </manifest>
