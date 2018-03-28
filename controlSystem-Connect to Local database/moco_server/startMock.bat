@@ -1,0 +1,1 @@
+java -jar moco-runner-0.10.2-standalone.jar http -p 9090 -c data.json
