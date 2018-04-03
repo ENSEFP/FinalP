@@ -24,7 +24,7 @@ public class MainConfigurationTime extends AppCompatActivity {
                 .create();
         myAlert.show();
 */
-        String url = "http://192.168.4.2/esp/fan.php?fan=" + getIntent().getStringExtra("temp")+getIntent().getStringExtra("temp0");
+        String url = "http://192.168.4.2/esp/time.php?begin_time=" + getIntent().getStringExtra("temp") + "&end_time=" + getIntent().getStringExtra("temp0");
 
 //        AlertDialog.Builder myAlert0 = new AlertDialog.Builder(this);
 //        myAlert0.setMessage(url)

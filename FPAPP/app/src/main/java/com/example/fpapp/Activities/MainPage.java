@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.fpapp.R;
 
 
@@ -13,7 +12,9 @@ public class MainPage extends AppCompatActivity {
 
     private TextView textViewName;
 
-    private ImageView led, fan, configuration, lock;
+    int count=0;
+
+    private ImageView led, fan, configuration, lock, view_s;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +24,40 @@ public class MainPage extends AppCompatActivity {
         String nameFromIntent = getIntent().getStringExtra("EMAIL");
         textViewName.setText("Welcome");
 
+
+        //Thread for notification
+        Thread t = new Thread(){
+            @Override
+            public void run() {
+                while(!isInterrupted()){
+                    try{
+                        Thread.sleep(1000);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                count++;
+
+                                if((count % 8) == 0){
+                                    //sendNotification ();
+                                    sendSomething();
+                                }
+
+                            }
+                        });
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        t.start();
+
+
         led();
         fan();
         configuration();
         lock();
+        view_s();
     }
 
     public void led(){
@@ -73,6 +104,25 @@ public class MainPage extends AppCompatActivity {
         });
     }
 
+    public void view_s(){
+        view_s = (ImageView) findViewById(R.id.view_s);
+        view_s.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent3 = new Intent(MainPage.this, MainView.class);
+                startActivity(intent3);
+            }
+        });
+    }
+
+
+    public void sendSomething(){
+        String username = "hhh";
+        String password = "jjj";
+        String type = "login";
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        backgroundWorker.execute(type, username, password);
+    }
 
 }
 

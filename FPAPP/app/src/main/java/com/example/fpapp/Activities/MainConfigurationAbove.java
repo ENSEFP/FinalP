@@ -25,7 +25,7 @@ public class MainConfigurationAbove extends AppCompatActivity {
                 .create();
         myAlert.show();
 */
-        String url = "http://192.168.4.2/esp/fan.php?fan=" + getIntent().getStringExtra("temp");
+        String url = "http://192.168.4.2/esp/temperture_too_high=" + getIntent().getStringExtra("temp");
 
 //        AlertDialog.Builder myAlert0 = new AlertDialog.Builder(this);
 //        myAlert0.setMessage(url)

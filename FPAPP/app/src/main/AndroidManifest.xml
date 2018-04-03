@@ -49,7 +49,9 @@
         <activity android:name=".Activities.MainLedLivingRoomOpen" />
         <activity android:name=".Activities.MainLock" />
         <activity android:name=".Activities.MainLockClose" />
-        <activity android:name=".Activities.MainLockOpen"></activity>
+        <activity android:name=".Activities.MainLockOpen" />
+        <activity android:name=".Activities.MainView" />
+        <activity android:name=".Activities.BackgroundWorker"></activity>
     </application>
 
 </manifest>
