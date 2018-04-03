@@ -7,8 +7,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
-
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
@@ -30,15 +28,28 @@
         <activity
             android:name=".Activities.Registration"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activities.MainPage"/>
-
-
+        <activity android:name=".Activities.MainPage" />
         <activity android:name=".Activities.MainConfiguration" />
         <activity android:name=".Activities.MainConfigurationAbove" />
         <activity android:name=".Activities.MainConfigurationBelow" />
         <activity android:name=".Activities.MainConfigurationDown" />
         <activity android:name=".Activities.MainConfigurationTime" />
         <activity android:name=".Activities.MainConfigurationUp" />
+        <activity android:name=".Activities.MainFan" />
+        <activity android:name=".Activities.MainFanLevel0" />
+        <activity android:name=".Activities.MainFanLevel1" />
+        <activity android:name=".Activities.MainFanLevel2" />
+        <activity android:name=".Activities.MainFanLevel3" />
+        <activity android:name=".Activities.MainLed" />
+        <activity android:name=".Activities.MainLedBedroomClose" />
+        <activity android:name=".Activities.MainLedBedroomOpen" />
+        <activity android:name=".Activities.MainLedKitchenClose" />
+        <activity android:name=".Activities.MainLedKitchenOpen" />
+        <activity android:name=".Activities.MainLedLivingRoomClose" />
+        <activity android:name=".Activities.MainLedLivingRoomOpen" />
+        <activity android:name=".Activities.MainLock" />
+        <activity android:name=".Activities.MainLockClose" />
+        <activity android:name=".Activities.MainLockOpen"></activity>
     </application>
 
 </manifest>

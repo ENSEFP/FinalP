@@ -21,35 +21,35 @@ public class MainPage extends AppCompatActivity {
 
         textViewName = (TextView) findViewById(R.id.name);
         String nameFromIntent = getIntent().getStringExtra("EMAIL");
-        textViewName.setText("Welcome " + nameFromIntent);
+        textViewName.setText("Welcome");
 
-//        led();
-//        fan();
+        led();
+        fan();
         configuration();
-//        lock();
+        lock();
     }
 
-//    public void led(){
-//        led = (ImageView) findViewById(R.id.led);
-//        led.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                Intent intent0 = new Intent(MainActivity.this, MainLed.class);
-//                startActivity(intent0);
-//            }
-//        });
-//    }
-//
-//    public void fan(){
-//        fan = (ImageView) findViewById(R.id.fan);
-//        fan.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                Intent intent1 = new Intent(MainActivity.this, MainFan.class);
-//                startActivity(intent1);
-//            }
-//        });
-//    }
+    public void led(){
+        led = (ImageView) findViewById(R.id.led);
+        led.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent0 = new Intent(MainPage.this, MainLed.class);
+                startActivity(intent0);
+            }
+        });
+    }
+
+    public void fan(){
+        fan = (ImageView) findViewById(R.id.fan);
+        fan.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent1 = new Intent(MainPage.this, MainFan.class);
+                startActivity(intent1);
+            }
+        });
+    }
 
     public void configuration(){
         configuration = (ImageView) findViewById(R.id.configuration);
@@ -62,16 +62,16 @@ public class MainPage extends AppCompatActivity {
         });
     }
 
-//    public void lock(){
-//        lock = (ImageView) findViewById(R.id.lock);
-//        lock.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                Intent intent3 = new Intent(MainActivity.this, MainLock.class);
-//                startActivity(intent3);
-//            }
-//        });
-//    }
+    public void lock(){
+        lock = (ImageView) findViewById(R.id.lock);
+        lock.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent3 = new Intent(MainPage.this, MainLock.class);
+                startActivity(intent3);
+            }
+        });
+    }
 
 
 }
