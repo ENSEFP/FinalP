@@ -22,7 +22,7 @@ public class MainConfiguration extends AppCompatActivity {
         setContentView(R.layout.activity_main_configuration);
 
         configuration0 = (AutoCompleteTextView) findViewById(R.id.editText0);
-        configuration1 = (AutoCompleteTextView) findViewById(R.id.editText1);
+        //configuration1 = (AutoCompleteTextView) findViewById(R.id.editText1);
         configuration2 = (AutoCompleteTextView) findViewById(R.id.editText2);
         configuration3 = (AutoCompleteTextView) findViewById(R.id.editText3);
         configuration4 = (AutoCompleteTextView) findViewById(R.id.editText4);
@@ -40,17 +40,17 @@ public class MainConfiguration extends AppCompatActivity {
             }
         });
 
-        btn1 = (Button) findViewById(R.id.button1);
-
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String temp1 = btnShowSavedClicked1();
-                Intent intent = new Intent(MainConfiguration.this, MainConfigurationDown.class);
-                intent.putExtra("temp", temp1);
-                startActivity(intent);
-            }
-        });
+//        btn1 = (Button) findViewById(R.id.button1);
+//
+//        btn1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String temp1 = btnShowSavedClicked1();
+//                Intent intent = new Intent(MainConfiguration.this, MainConfigurationDown.class);
+//                intent.putExtra("temp", temp1);
+//                startActivity(intent);
+//            }
+//        });
 
         btn2 = (Button) findViewById(R.id.button2);
 
@@ -118,10 +118,10 @@ public class MainConfiguration extends AppCompatActivity {
         return temp;
     }
 
-    public String btnShowSavedClicked1(){
-        String temp = configuration1.getText().toString();
-        return temp;
-    }
+//    public String btnShowSavedClicked1(){
+//        String temp = configuration1.getText().toString();
+//        return temp;
+//    }
 
     public String btnShowSavedClicked2(){
         String temp = configuration2.getText().toString();

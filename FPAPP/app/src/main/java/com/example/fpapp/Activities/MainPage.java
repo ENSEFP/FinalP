@@ -37,7 +37,7 @@ public class MainPage extends AppCompatActivity {
                             public void run() {
                                 count++;
 
-                                if((count % 8) == 0){
+                                if((count % 2) == 0){
                                     //sendNotification ();
                                     sendSomething();
                                 }

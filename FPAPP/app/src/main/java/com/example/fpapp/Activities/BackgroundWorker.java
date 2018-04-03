@@ -96,11 +96,15 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
 //        alertDialog.show();
         //Log.i("iii", "hhhh111");
         //Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
-        Log.i("iii", "hhhh111");
+
         if(result == null){
             Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
         }else if(Integer.parseInt(result) == 1){
             sendNotification(result);
+        }else if(Integer.parseInt(result) == 0){
+            Log.i("iii", "result 0");
+        }else{
+            Log.i("iii", "fff");
         }
 
 
@@ -116,8 +120,8 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         //Log.i("iii", "hhhh");
         notification = new Notification.Builder(context)
                 .setSmallIcon(R.mipmap.ic_launcher)//设置小图标
-                .setContentTitle("任务结果")
-                .setContentText("Hello World " + result)
+                .setContentTitle("Notification")
+                .setContentText("Lock is Open " + result)
                 .build();
         //PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, new Intent(this, MainActivity.class), 0);
         //notification.contentIntent = pendingIntent;

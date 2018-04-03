@@ -25,7 +25,7 @@ public class MainConfigurationUp extends AppCompatActivity {
         .create();
         myAlert.show();
 */
-        String url = "http://192.168.4.2/esp/temperture_heat=" + getIntent().getStringExtra("temp");
+        String url = "http://192.168.4.2/esp/temperature_change.php?temperature_heat=" + getIntent().getStringExtra("temp");
 
 //        AlertDialog.Builder myAlert0 = new AlertDialog.Builder(this);
 //        myAlert0.setMessage(url)
