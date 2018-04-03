@@ -9,8 +9,6 @@ import android.widget.Switch;
 
 import android.content.Intent;
 
-import com.example.fpapp.Functions.Camera;
-import com.example.fpapp.Functions.Location;
 import com.example.fpapp.R;
 
 /**
@@ -33,52 +31,7 @@ public class MainPage extends AppCompatActivity {
         String nameFromIntent = getIntent().getStringExtra("EMAIL");
         textViewName.setText("Welcome " + nameFromIntent);
 
-        location();
-        camera();
-    }
 
-    public void OnOpen(View view) {
-        // initiate a Switch
-        Switch simpleSwitch = (Switch) findViewById(R.id.open);
-
-        // check current state of a Switch (true or false).
-        Boolean switchState = simpleSwitch.isChecked();
-        String Temp;
-        if(switchState == true){
-            Temp = "1";
-        }else{
-            Temp = "0";
-        }
-
-        String type = "open";
-
-        OpenDoor openDoor = new OpenDoor(this);
-        openDoor.execute(type, Temp);
-    }
-
-
-
-
-    public void location(){
-        location = (Button) findViewById(R.id.location);
-        location.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent0 = new Intent(MainPage.this, Location.class);
-                startActivity(intent0);
-            }
-        });
-    }
-
-    public void camera(){
-        camera = (Button) findViewById(R.id.camera);
-        camera.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent1 = new Intent(MainPage.this, Camera.class);
-                startActivity(intent1);
-            }
-        });
     }
 
 

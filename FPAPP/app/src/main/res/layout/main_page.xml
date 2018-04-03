@@ -20,49 +20,6 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <Switch
-        android:id="@+id/open"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/name"
-        android:layout_marginLeft="67dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="69dp"
-        android:onClick="OnOpen"
-        android:text="Open" />
 
-    <Switch
-        android:id="@+id/alarm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/open"
-        android:layout_alignStart="@+id/open"
-        android:layout_below="@+id/open"
-        android:layout_marginTop="79dp"
-        android:text="Alarm" />
-
-    <Button
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/alarm"
-        android:layout_alignBottom="@+id/alarm"
-        android:layout_marginLeft="38dp"
-        android:layout_marginStart="38dp"
-        android:layout_toEndOf="@+id/open"
-        android:layout_toRightOf="@+id/open"
-        android:text="Location" />
-
-    <Button
-        android:id="@+id/camera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/alarm"
-        android:layout_alignRight="@+id/alarm"
-        android:layout_below="@+id/location"
-        android:layout_marginTop="59dp"
-        android:text="Video" />
 
 </RelativeLayout>

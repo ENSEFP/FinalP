@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FPAPP</string>
+    <string name="app_name">HCS</string>
     <string name="hint_name">Name</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
