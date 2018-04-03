@@ -83,7 +83,7 @@
 
                     <ImageView
                         android:id="@+id/open"
-                        android:src="@drawable/open_lock"
+                        android:src="@drawable/close_lock"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -123,7 +123,7 @@
 
                     <ImageView
                         android:id="@+id/close"
-                        android:src="@drawable/close_lock"
+                        android:src="@drawable/open_lock"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
