@@ -41,7 +41,7 @@
         <activity android:name=".MainConfigurationDown" />
         <activity android:name=".MainConfigurationAbove" />
         <activity android:name=".MainConfigurationBelow" />
-        <activity android:name=".MainConfigurationTime"></activity>
+        <activity android:name=".MainConfigurationTime" />
     </application>
 
 </manifest>
