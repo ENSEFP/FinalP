@@ -98,7 +98,7 @@ public class BackgroundWorker extends AsyncTask<String,Void,String> {
         //Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
 
         if(result == null){
-            Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
         }else if(Integer.parseInt(result) == 1){
             sendNotification(result);
         }else if(Integer.parseInt(result) == 0){
