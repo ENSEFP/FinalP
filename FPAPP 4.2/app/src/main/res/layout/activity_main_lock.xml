@@ -29,7 +29,7 @@
                 android:textSize="23sp" />
 
             <TextView
-                android:id="@+id/textGrid"
+                android:id="@+id/textGrid1"
                 android:text="@string/remote_control_home_system"
                 android:textSize="26sp"
                 android:textColor="@android:color/black"

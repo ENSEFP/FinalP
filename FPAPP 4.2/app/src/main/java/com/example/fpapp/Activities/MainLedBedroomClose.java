@@ -26,18 +26,9 @@ public class MainLedBedroomClose extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webb.loadUrl(url);
 
-        back_led_close();
+
 
     }
 
-    public void back_led_close(){
-        back_led = (ImageView) findViewById(R.id.back_led_close);
-        back_led.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent0 = new Intent(MainLedBedroomClose.this, MainLed.class);
-                startActivity(intent0);
-            }
-        });
-    }
+
 }

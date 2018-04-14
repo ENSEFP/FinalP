@@ -26,19 +26,10 @@ public class MainLockClose extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webb.loadUrl(url);
 
-        back_lock_close();
+
 
     }
 
-    public void back_lock_close(){
-        back_lock = (ImageView) findViewById(R.id.back_lock_close);
-        back_lock.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent0 = new Intent(MainLockClose.this, MainLock.class);
-                startActivity(intent0);
-            }
-        });
-    }
+
 
 }

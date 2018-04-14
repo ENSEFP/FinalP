@@ -26,18 +26,9 @@ public class MainLedLivingRoomOpen extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webb.loadUrl(url);
 
-        back_led_open();
+
 
     }
 
-    public void back_led_open(){
-        back_led = (ImageView) findViewById(R.id.back_led_open);
-        back_led.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent0 = new Intent(MainLedLivingRoomOpen.this, MainLed.class);
-                startActivity(intent0);
-            }
-        });
-    }
+
 }

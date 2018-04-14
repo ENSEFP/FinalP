@@ -20,7 +20,7 @@ public class MainPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page);
 
-        textViewName = (TextView) findViewById(R.id.name);
+        textViewName = (TextView) findViewById(R.id.name1);
         String nameFromIntent = getIntent().getStringExtra("EMAIL");
         textViewName.setText("Welcome");
 

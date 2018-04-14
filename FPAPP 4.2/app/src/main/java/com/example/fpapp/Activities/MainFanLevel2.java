@@ -25,18 +25,9 @@ public class MainFanLevel2 extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webb.loadUrl(url);
 
-        back_fan();
+
 
     }
 
-    public void back_fan(){
-        level2 = (ImageView) findViewById(R.id.back_fan);
-        level2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent0 = new Intent(MainFanLevel2.this, MainFan.class);
-                startActivity(intent0);
-            }
-        });
-    }
+
 }

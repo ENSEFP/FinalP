@@ -8,14 +8,6 @@
 
     tools:context=".Activities.MainLockOpen">
 
-    <ImageView
-        android:id="@+id/back_lock_open"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:srcCompat="?attr/homeAsUpIndicator" />
-
     <TextView
         android:id="@+id/textGrid"
         android:layout_width="wrap_content"

@@ -1,0 +1,48 @@
+table.greenTable {
+  font-family: "Times New Roman", Times, serif;
+  border: 7px solid #24943A;
+  background-color: #BAEEEE;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+table.greenTable td, table.greenTable th {
+  border: 2px solid #24943A;
+  padding: 10px 3px;
+}
+table.greenTable tbody td {
+  font-size: 25px;
+  font-weight: bold;
+  color: #FF0C4F;
+}
+table.greenTable thead {
+  background: #24943A;
+  background: -moz-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  background: -webkit-linear-gradient(top, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  background: linear-gradient(to bottom, #5baf6b 0%, #3a9e4d 66%, #24943A 100%);
+  border-bottom: 0px solid #444444;
+}
+table.greenTable thead th {
+  font-size: 30px;
+  font-weight: bold;
+  color: #F0F0F0;
+  text-align: center;
+  border-left: 2px solid #24943A;
+}
+table.greenTable thead th:first-child {
+  border-left: none;
+}
+
+table.greenTable tfoot td {
+  font-size: 13px;
+}
+table.greenTable tfoot .links {
+  text-align: right;
+}
+table.greenTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #24943A;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
